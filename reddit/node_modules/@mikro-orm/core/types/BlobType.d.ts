@@ -1,0 +1,9 @@
+/// <reference types="node" />
+import { Type } from './Type';
+import { Platform } from '../platforms';
+import { EntityProperty } from '../typings';
+export declare class BlobType extends Type<Buffer | null> {
+    convertToDatabaseValue(value: Buffer, platform: Platform): Buffer;
+    convertToJSValue(value: Buffer, platform: Platform): Buffer | null;
+    getColumnType(prop: EntityProperty, platform: Platform): string;
+}
