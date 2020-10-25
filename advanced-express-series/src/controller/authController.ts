@@ -10,7 +10,6 @@ import { HttpExpress } from "../security/httpExpress";
 import { Unauthorized } from "../error/unauthorized";
 import { RefreshTokenDTO } from "../dto/request/refreshToken.dto";
 import { plainToClass } from "class-transformer";
-import { UserDTO } from "../dto/response/user.dto";
 import { AuthService, AuthServiceImpl } from "../service/authService";
 
 export class AuthController extends BaseController {
